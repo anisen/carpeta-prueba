@@ -3,43 +3,22 @@
 <head>
 	<meta charset="utf-8">
 	<title>facebook</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 
-	<fb:login-button 
-	scope="public_profile,email"
-	onlogin="checkLoginState();">
-</fb:login-button>
-
-
-
-<div id="fb-root"></div>
-<div class="fb-login-button" data-max-rows="1" data-size="medium" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="true" data-use-continue-as="false"></div>
-<script>(function(d, s, id) {
-	var js, fjs = d.getElementsByTagName(s)[0];
-	if (d.getElementById(id)) return;
-	js = d.createElement(s); js.id = id;
-	js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.9&appId=485536455130563";
-	fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
+	<div id="fb-root"></div>
+	<div class="fb-login-button" data-max-rows="1" data-size="medium" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="true" data-use-continue-as="false"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.9&appId=485536455130563";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
 </script>
-<script> 
-	ventana . fbAsyncInit = función () { 
-		FB . init ({ 
-			Id de aplicación       : '485536455130563' , 
-			galletas      : verdad , 
-			XFBML       : cierto , 
-			la versión     : 'v2.8' }); 
-		FB . AppEvents . logPageView (); };      
 
-
-
-		( Función ( d , s , ID ) { var js , FJS = d . GetElementsByTagName ( s ) [ 0 ]; si ( d . GetElementById ( ID )) { retorno ;} 
-			js = d . CreateElement ( s ); js . ID = Identificación ; 
-			js . src = "//connect.facebook.net/en_US/sdk.js" ; 
-			FJS . parentNode . insertBefore ( js , FJS ); } ( documento , 'guión' , 'facebook-jssdk' )); 
-		</script>
-		<script type="text/javascript" src="assets/js/main.js"></script>
-	</body>
-	</html>
+<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
